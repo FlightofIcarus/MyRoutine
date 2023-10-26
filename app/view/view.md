@@ -1,0 +1,1 @@
+Pasta dos arquivos da camada de cliente do projeto.

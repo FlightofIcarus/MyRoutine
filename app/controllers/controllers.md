@@ -1,0 +1,1 @@
+Pasta dos arquivos de controle do funcionamento local do projeto.

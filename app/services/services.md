@@ -1,0 +1,1 @@
+Pasta dos arquivos que fazem comunicação com a API do Google.

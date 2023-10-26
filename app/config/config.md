@@ -1,0 +1,1 @@
+Pasta dos arquivos gerais de configuração do projeto.
