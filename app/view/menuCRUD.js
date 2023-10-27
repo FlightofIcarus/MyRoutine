@@ -4,7 +4,6 @@ const listEvents = require('../services/listarEvento');
 const updateEvent = require('../services/atualizarEvento');
 const deleteEvent = require('../services/deleteEvento');
 
-
 let menuCrud = {
     async create(newEvent) {
         try {

@@ -1,7 +1,6 @@
 const fs = require('fs').promises;
 const path = require('path');
 
-
 const CREDENTIALS_PATH = path.join(process.cwd(), 'app', 'db', 'credentials.json');
 const TOKEN_PATH = path.join(process.cwd(), 'app', 'db', 'token.json');
 

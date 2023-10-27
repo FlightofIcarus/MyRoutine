@@ -2,7 +2,6 @@ const {google} = require('googleapis');
 const authorize = require('../controllers/autorizarUsuario');
 const readlineSync = require('readline-sync');
 
-
 async function getEventId(){  
     let auth = await authorize();
 
