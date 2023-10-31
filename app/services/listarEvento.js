@@ -16,7 +16,7 @@ async function listEvents(auth) {
     console.error('Nenhum evento encontrado.');
     return;
   }
-  console.error('Mostrando seus próximos 05 eventos:');
+  console.log('Mostrando seus próximos 05 eventos:');
   events.map((event, i) => {
     const start = event.start.dateTime || event.start.date;
     console.log(`${start} - ${event.summary} - ${event.iCalUID}`);

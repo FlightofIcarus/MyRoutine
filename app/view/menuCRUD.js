@@ -6,10 +6,38 @@ const deleteEvent = require('../services/deleteEvento');
 
 
 let menuCrud = {
-    create() {authorize().then(insertEvent).catch(console.error);},
-    read() {authorize().then(listEvents).catch(console.error);},
-    update() {authorize().then(updateEvent).catch(console.error);},
-    delete() {authorize().then(deleteEvent).catch(console.error);}
+    async create(newEvent) {
+        try {
+            let auth = await authorize();
+            await insertEvent(auth, newEvent);
+        } catch (error) {
+            console.error(error);
+        }
+    },
+    async read() {
+        try {
+            let auth = await authorize();
+            await listEvents(auth);
+        } catch (error) {
+            console.error(error);
+        }
+    },
+    async update(eventToUpdate, updatedEventObj) {
+        try {
+            let auth = await authorize();
+            updateEvent(auth, eventToUpdate, updatedEventObj);
+        } catch (error) {
+            console.error(error);
+        }        
+    },
+    async delete(eventToDelete) {
+        try {
+            let auth = await authorize();
+            deleteEvent(auth, eventToDelete);
+        } catch (error) {
+            console.error(error);
+        }        
+    }
 };
 
 menuCrud.read();
