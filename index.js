@@ -1,4 +1,3 @@
-const listEvents = require('./listarEvento');
-const authorize = require('./autorizarUsuario');
+const menu = require('./app/view/interfaceUsuario');
 
-authorize().then(listEvents).catch(console.error);
+menu()
