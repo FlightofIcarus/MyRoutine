@@ -1,9 +1,11 @@
 const getEventId = require('../config/getEventoId.js');
 const getValues = require('../config/tratarDados.js');
+
 const menuCrud = require('./menuCRUD.js');
 const readlineSync = require('readline-sync');
 
 readlineSync.setDefaultOptions({ inputEncoding: 'utf-8', outputEncoding: 'utf-8' });
+
 
 async function menu(){
     let opcao;
@@ -44,6 +46,7 @@ async function menu(){
         }
     
     } while (opcao !== 5) 
+
 } 
 
-module.exports = menu;
+

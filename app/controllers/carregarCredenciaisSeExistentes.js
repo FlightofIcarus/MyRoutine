@@ -4,6 +4,7 @@ const process = require('process');
 const {authenticate} = require('@google-cloud/local-auth');
 const {google} = require('googleapis');
 
+
 const TOKEN_PATH = path.join(process.cwd(), 'app', 'db', 'token.json');
 
 async function loadSavedCredentialsIfExist() {
